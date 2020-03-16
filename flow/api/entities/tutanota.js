@@ -1143,12 +1143,9 @@ type GroupInvitationDeleteData = {
 type ReportedMailData = {
     _type: TypeRef<ReportedMailData>;
     _id:Id;
-    bodyText:string;
-    senderMailAddress:string;
-    senderName:string;
-    subject:string;
-    technicalSenderMailAddress:?string;
+    mailSessionKey:Uint8Array;
 
+    mailId:IdTuple;
  }
 
 type ReportPhishingPostData = {

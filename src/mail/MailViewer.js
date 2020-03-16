@@ -4,7 +4,7 @@ import m from "mithril"
 import stream from "mithril/stream/stream.js"
 import {ExpanderButton, ExpanderPanel} from "../gui/base/Expander"
 import {ExpanderButtonN, ExpanderPanelN} from "../gui/base/ExpanderN"
-import {load, serviceRequest, serviceRequestVoid, update} from "../api/main/Entity"
+import {load, serviceRequestVoid, update} from "../api/main/Entity"
 import {Button, createAsyncDropDownButton, createDropDownButton} from "../gui/base/Button"
 import {formatDateTime, formatDateWithWeekday, formatStorageSize, formatTime, urlEncodeHtmlTags} from "../misc/Formatter"
 import {windowFacade} from "../misc/WindowFacade"
@@ -97,8 +97,8 @@ import {createEmailSenderListElement} from "../api/entities/sys/EmailSenderListE
 import {isNewMailActionAvailable} from "./MailView"
 import {createReportPhishingPostData} from "../api/entities/tutanota/ReportPhishingPostData"
 import {createReportedMailData} from "../api/entities/tutanota/ReportedMailData"
-import {ReportPhishingGetReturnTypeRef} from "../api/entities/tutanota/ReportPhishingGetReturn"
-import murmurHash from "../api/worker/crypto/lib/murmurhash3_32"
+import {_TypeModel as MailTypeModel} from "../api/entities/tutanota/Mail"
+import {base64ToUint8Array} from "../api/common/utils/Encoding"
 
 assertMainOrNode()
 
@@ -469,35 +469,29 @@ export class MailViewer {
 	}
 
 	_checkMailForPhishing(mail: Mail) {
-		const subject = mail.subject
-		const subjectHash = murmurHash(subject)
-		const subjectMarker = "2" + subjectHash
-		console.log("subject", subject, "marker", subjectMarker)
-		serviceRequest(TutanotaService.ReportPhishingService, HttpMethod.GET, null, ReportPhishingGetReturnTypeRef)
-			.then(({markers}) => {
-				if (markers.find(m => m.marker === subjectMarker)) {
-					this._suspicious = true
-					console.log("SUSPICIOUS EMAIL")
-					m.redraw()
-				}
-				console.log(markers)
-			})
+		mailModel.checkMailForPhishing(mail).then((isSuspicious) => {
+			if (isSuspicious) {
+				this._suspicious = true
+				m.redraw()
+			}
+		})
 	}
 
-	_reportMailForPhishing(mail: Mail,) {
-		const postData = createReportPhishingPostData({
-			mailData: createReportedMailData({
-				bodyText: this._getMailBody(),
-				senderMailAddress: mail.sender.address,
-				senderName: mail.sender.name,
-				subject: mail.subject,
-				technicalSenderMailAddress: mail.differentEnvelopeSender,
-			})
-		})
-		serviceRequestVoid(TutanotaService.ReportPhishingService, HttpMethod.POST, postData)
-			.then(() => {
-				console.log("reported, subject:", mail.subject)
-			})
+	_reportMailForPhishing(mail: Mail) {
+		worker.resolveSessionKey(MailTypeModel, mail)
+		      .then((mailSessionKeyB64) => {
+			      const postData = createReportPhishingPostData({
+				      mailData: createReportedMailData({
+					      mailId: mail._id,
+					      mailSessionKey: base64ToUint8Array(neverNull(mailSessionKeyB64)),
+				      })
+			      })
+			      serviceRequestVoid(TutanotaService.ReportPhishingService, HttpMethod.POST, postData)
+		      })
+		      .then(() => {
+			      console.log("reported, subject:", mail.subject)
+		      })
+
 	}
 
 	getBounds(): ?PosRect {
