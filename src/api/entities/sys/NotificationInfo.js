@@ -12,8 +12,24 @@ export const _TypeModel: TypeModel = {
 	"versioned": false,
 	"encrypted": false,
 	"values": {
-		"_id": {"name": "_id", "id": 1365, "since": 32, "type": "CustomId", "cardinality": "One", "final": true, "encrypted": false},
-		"counter": {"name": "counter", "id": 1367, "since": 32, "type": "Number", "cardinality": "One", "final": false, "encrypted": false},
+		"_id": {
+			"name": "_id",
+			"id": 1365,
+			"since": 32,
+			"type": "CustomId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
+		"counter": {
+			"name": "counter",
+			"id": 1367,
+			"since": 32,
+			"type": "Number",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
 		"mailAddress": {
 			"name": "mailAddress",
 			"id": 1366,

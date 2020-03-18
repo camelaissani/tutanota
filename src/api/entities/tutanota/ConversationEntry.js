@@ -21,7 +21,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"_id": {"name": "_id", "id": 118, "since": 1, "type": "GeneratedId", "cardinality": "One", "final": true, "encrypted": false},
+		"_id": {
+			"name": "_id",
+			"id": 118,
+			"since": 1,
+			"type": "GeneratedId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"_ownerGroup": {
 			"name": "_ownerGroup",
 			"id": 588,
@@ -49,7 +57,15 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": false
 		},
-		"messageId": {"name": "messageId", "id": 121, "since": 1, "type": "String", "cardinality": "One", "final": true, "encrypted": false}
+		"messageId": {
+			"name": "messageId",
+			"id": 121,
+			"since": 1,
+			"type": "String",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		}
 	},
 	"associations": {
 		"mail": {

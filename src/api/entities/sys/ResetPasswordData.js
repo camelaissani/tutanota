@@ -30,8 +30,24 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"salt": {"name": "salt", "id": 587, "since": 1, "type": "Bytes", "cardinality": "One", "final": false, "encrypted": false},
-		"verifier": {"name": "verifier", "id": 586, "since": 1, "type": "Bytes", "cardinality": "One", "final": false, "encrypted": false}
+		"salt": {
+			"name": "salt",
+			"id": 587,
+			"since": 1,
+			"type": "Bytes",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
+		"verifier": {
+			"name": "verifier",
+			"id": 586,
+			"since": 1,
+			"type": "Bytes",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		}
 	},
 	"associations": {
 		"user": {

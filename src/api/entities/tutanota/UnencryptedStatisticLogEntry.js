@@ -21,7 +21,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"_id": {"name": "_id", "id": 881, "since": 25, "type": "GeneratedId", "cardinality": "One", "final": true, "encrypted": false},
+		"_id": {
+			"name": "_id",
+			"id": 881,
+			"since": 25,
+			"type": "GeneratedId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"_ownerGroup": {
 			"name": "_ownerGroup",
 			"id": 884,
@@ -49,7 +57,15 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": false
 		},
-		"date": {"name": "date", "id": 885, "since": 25, "type": "Date", "cardinality": "One", "final": true, "encrypted": false}
+		"date": {
+			"name": "date",
+			"id": 885,
+			"since": 25,
+			"type": "Date",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		}
 	},
 	"associations": {},
 	"app": "tutanota",

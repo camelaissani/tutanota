@@ -12,8 +12,24 @@ export const _TypeModel: TypeModel = {
 	"versioned": false,
 	"encrypted": false,
 	"values": {
-		"_id": {"name": "_id", "id": 224, "since": 1, "type": "CustomId", "cardinality": "One", "final": true, "encrypted": false},
-		"bodyText": {"name": "bodyText", "id": 226, "since": 1, "type": "String", "cardinality": "One", "final": false, "encrypted": false},
+		"_id": {
+			"name": "_id",
+			"id": 224,
+			"since": 1,
+			"type": "CustomId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
+		"bodyText": {
+			"name": "bodyText",
+			"id": 226,
+			"since": 1,
+			"type": "String",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
 		"mailboxLink": {
 			"name": "mailboxLink",
 			"id": 417,
@@ -41,7 +57,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"subject": {"name": "subject", "id": 225, "since": 1, "type": "String", "cardinality": "One", "final": false, "encrypted": false}
+		"subject": {
+			"name": "subject",
+			"id": 225,
+			"since": 1,
+			"type": "String",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		}
 	},
 	"associations": {},
 	"app": "tutanota",

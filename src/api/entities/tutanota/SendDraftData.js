@@ -30,7 +30,15 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": false
 		},
-		"language": {"name": "language", "id": 549, "since": 11, "type": "String", "cardinality": "One", "final": true, "encrypted": false},
+		"language": {
+			"name": "language",
+			"id": 549,
+			"since": 11,
+			"type": "String",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"mailSessionKey": {
 			"name": "mailSessionKey",
 			"id": 550,

@@ -12,10 +12,42 @@ export const _TypeModel: TypeModel = {
 	"versioned": false,
 	"encrypted": true,
 	"values": {
-		"_area": {"name": "_area", "id": 20, "since": 1, "type": "Number", "cardinality": "One", "final": true, "encrypted": false},
-		"_format": {"name": "_format", "id": 17, "since": 1, "type": "Number", "cardinality": "One", "final": false, "encrypted": false},
-		"_id": {"name": "_id", "id": 15, "since": 1, "type": "GeneratedId", "cardinality": "One", "final": true, "encrypted": false},
-		"_owner": {"name": "_owner", "id": 19, "since": 1, "type": "GeneratedId", "cardinality": "One", "final": true, "encrypted": false},
+		"_area": {
+			"name": "_area",
+			"id": 20,
+			"since": 1,
+			"type": "Number",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
+		"_format": {
+			"name": "_format",
+			"id": 17,
+			"since": 1,
+			"type": "Number",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
+		"_id": {
+			"name": "_id",
+			"id": 15,
+			"since": 1,
+			"type": "GeneratedId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
+		"_owner": {
+			"name": "_owner",
+			"id": 19,
+			"since": 1,
+			"type": "GeneratedId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"_ownerEncSessionKey": {
 			"name": "_ownerEncSessionKey",
 			"id": 18,
@@ -43,7 +75,15 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": false
 		},
-		"cid": {"name": "cid", "id": 924, "since": 32, "type": "String", "cardinality": "ZeroOrOne", "final": true, "encrypted": true},
+		"cid": {
+			"name": "cid",
+			"id": 924,
+			"since": 32,
+			"type": "String",
+			"cardinality": "ZeroOrOne",
+			"final": true,
+			"encrypted": true
+		},
 		"mimeType": {
 			"name": "mimeType",
 			"id": 23,
@@ -53,8 +93,24 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": true
 		},
-		"name": {"name": "name", "id": 21, "since": 1, "type": "String", "cardinality": "One", "final": false, "encrypted": true},
-		"size": {"name": "size", "id": 22, "since": 1, "type": "Number", "cardinality": "One", "final": true, "encrypted": false}
+		"name": {
+			"name": "name",
+			"id": 21,
+			"since": 1,
+			"type": "String",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": true
+		},
+		"size": {
+			"name": "size",
+			"id": 22,
+			"since": 1,
+			"type": "Number",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		}
 	},
 	"associations": {
 		"subFiles": {

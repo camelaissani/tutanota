@@ -12,7 +12,15 @@ export const _TypeModel: TypeModel = {
 	"versioned": false,
 	"encrypted": false,
 	"values": {
-		"_id": {"name": "_id", "id": 191, "since": 1, "type": "CustomId", "cardinality": "One", "final": true, "encrypted": false},
+		"_id": {
+			"name": "_id",
+			"id": 191,
+			"since": 1,
+			"type": "CustomId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"lastseenuid": {
 			"name": "lastseenuid",
 			"id": 193,
@@ -22,7 +30,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"name": {"name": "name", "id": 192, "since": 1, "type": "String", "cardinality": "One", "final": false, "encrypted": false},
+		"name": {
+			"name": "name",
+			"id": 192,
+			"since": 1,
+			"type": "String",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
 		"uidvalidity": {
 			"name": "uidvalidity",
 			"id": 194,

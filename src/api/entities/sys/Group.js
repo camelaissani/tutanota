@@ -21,7 +21,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"_id": {"name": "_id", "id": 7, "since": 1, "type": "GeneratedId", "cardinality": "One", "final": true, "encrypted": false},
+		"_id": {
+			"name": "_id",
+			"id": 7,
+			"since": 1,
+			"type": "GeneratedId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"_ownerGroup": {
 			"name": "_ownerGroup",
 			"id": 981,
@@ -49,7 +57,15 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": false
 		},
-		"enabled": {"name": "enabled", "id": 12, "since": 1, "type": "Boolean", "cardinality": "One", "final": true, "encrypted": false},
+		"enabled": {
+			"name": "enabled",
+			"id": 12,
+			"since": 1,
+			"type": "Boolean",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"external": {
 			"name": "external",
 			"id": 982,
@@ -59,7 +75,15 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": false
 		},
-		"type": {"name": "type", "id": 10, "since": 1, "type": "Number", "cardinality": "One", "final": true, "encrypted": false}
+		"type": {
+			"name": "type",
+			"id": 10,
+			"since": 1,
+			"type": "Number",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		}
 	},
 	"associations": {
 		"administratedGroups": {
@@ -71,7 +95,15 @@ export const _TypeModel: TypeModel = {
 			"refType": "AdministratedGroupsRef",
 			"final": true
 		},
-		"keys": {"name": "keys", "id": 13, "since": 1, "type": "AGGREGATION", "cardinality": "Any", "refType": "KeyPair", "final": true},
+		"keys": {
+			"name": "keys",
+			"id": 13,
+			"since": 1,
+			"type": "AGGREGATION",
+			"cardinality": "Any",
+			"refType": "KeyPair",
+			"final": true
+		},
 		"admin": {
 			"name": "admin",
 			"id": 224,

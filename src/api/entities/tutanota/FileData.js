@@ -21,7 +21,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"_id": {"name": "_id", "id": 6, "since": 1, "type": "GeneratedId", "cardinality": "One", "final": true, "encrypted": false},
+		"_id": {
+			"name": "_id",
+			"id": 6,
+			"since": 1,
+			"type": "GeneratedId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"_ownerGroup": {
 			"name": "_ownerGroup",
 			"id": 579,
@@ -40,7 +48,15 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": false
 		},
-		"size": {"name": "size", "id": 9, "since": 1, "type": "Number", "cardinality": "One", "final": false, "encrypted": false},
+		"size": {
+			"name": "size",
+			"id": 9,
+			"since": 1,
+			"type": "Number",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
 		"unreferenced": {
 			"name": "unreferenced",
 			"id": 409,

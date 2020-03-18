@@ -20,7 +20,16 @@ export const _TypeModel: TypeModel = {
 			"cardinality": "One",
 			"final": false,
 			"encrypted": false
-		}, "salt": {"name": "salt", "id": 422, "since": 1, "type": "Bytes", "cardinality": "One", "final": false, "encrypted": false}
+		},
+		"salt": {
+			"name": "salt",
+			"id": 422,
+			"since": 1,
+			"type": "Bytes",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		}
 	},
 	"associations": {},
 	"app": "sys",

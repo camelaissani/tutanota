@@ -21,8 +21,24 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"monitor": {"name": "monitor", "id": 14, "since": 1, "type": "String", "cardinality": "One", "final": false, "encrypted": false},
-		"owner": {"name": "owner", "id": 15, "since": 1, "type": "GeneratedId", "cardinality": "One", "final": false, "encrypted": false}
+		"monitor": {
+			"name": "monitor",
+			"id": 14,
+			"since": 1,
+			"type": "String",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
+		"owner": {
+			"name": "owner",
+			"id": 15,
+			"since": 1,
+			"type": "GeneratedId",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		}
 	},
 	"associations": {},
 	"app": "monitor",

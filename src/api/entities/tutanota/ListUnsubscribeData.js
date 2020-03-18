@@ -21,7 +21,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"headers": {"name": "headers", "id": 871, "since": 24, "type": "String", "cardinality": "One", "final": false, "encrypted": false},
+		"headers": {
+			"name": "headers",
+			"id": 871,
+			"since": 24,
+			"type": "String",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
 		"recipient": {
 			"name": "recipient",
 			"id": 870,

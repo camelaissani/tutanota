@@ -12,10 +12,42 @@ export const _TypeModel: TypeModel = {
 	"versioned": false,
 	"encrypted": true,
 	"values": {
-		"_area": {"name": "_area", "id": 631, "since": 5, "type": "Number", "cardinality": "One", "final": true, "encrypted": false},
-		"_format": {"name": "_format", "id": 629, "since": 5, "type": "Number", "cardinality": "One", "final": false, "encrypted": false},
-		"_id": {"name": "_id", "id": 627, "since": 5, "type": "GeneratedId", "cardinality": "One", "final": true, "encrypted": false},
-		"_owner": {"name": "_owner", "id": 630, "since": 5, "type": "GeneratedId", "cardinality": "One", "final": true, "encrypted": false},
+		"_area": {
+			"name": "_area",
+			"id": 631,
+			"since": 5,
+			"type": "Number",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
+		"_format": {
+			"name": "_format",
+			"id": 629,
+			"since": 5,
+			"type": "Number",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
+		"_id": {
+			"name": "_id",
+			"id": 627,
+			"since": 5,
+			"type": "GeneratedId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
+		"_owner": {
+			"name": "_owner",
+			"id": 630,
+			"since": 5,
+			"type": "GeneratedId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"_ownerEncSessionKey": {
 			"name": "_ownerEncSessionKey",
 			"id": 1497,
@@ -70,7 +102,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"language": {"name": "language", "id": 634, "since": 5, "type": "String", "cardinality": "One", "final": false, "encrypted": false},
+		"language": {
+			"name": "language",
+			"id": 634,
+			"since": 5,
+			"type": "String",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
 		"lastNotificationDate": {
 			"name": "lastNotificationDate",
 			"id": 1248,

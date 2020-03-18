@@ -7,14 +7,14 @@ export const _TypeModel: TypeModel = {
 	"name": "ReportPhishingGetReturn",
 	"since": 40,
 	"type": "DATA_TRANSFER_TYPE",
-	"id": 1045,
-	"rootId": "CHR1dGFub3RhAAQV",
+	"id": 1040,
+	"rootId": "CHR1dGFub3RhAAQQ",
 	"versioned": false,
 	"encrypted": false,
 	"values": {
 		"_format": {
 			"name": "_format",
-			"id": 1046,
+			"id": 1041,
 			"since": 40,
 			"type": "Number",
 			"cardinality": "One",
@@ -25,7 +25,7 @@ export const _TypeModel: TypeModel = {
 	"associations": {
 		"markers": {
 			"name": "markers",
-			"id": 1047,
+			"id": 1042,
 			"since": 40,
 			"type": "AGGREGATION",
 			"cardinality": "Any",

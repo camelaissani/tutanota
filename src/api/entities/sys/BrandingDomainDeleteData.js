@@ -20,7 +20,16 @@ export const _TypeModel: TypeModel = {
 			"cardinality": "One",
 			"final": false,
 			"encrypted": false
-		}, "domain": {"name": "domain", "id": 1157, "since": 22, "type": "String", "cardinality": "One", "final": true, "encrypted": false}
+		},
+		"domain": {
+			"name": "domain",
+			"id": 1157,
+			"since": 22,
+			"type": "String",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		}
 	},
 	"associations": {},
 	"app": "sys",

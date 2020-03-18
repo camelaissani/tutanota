@@ -20,7 +20,16 @@ export const _TypeModel: TypeModel = {
 			"cardinality": "One",
 			"final": false,
 			"encrypted": false
-		}, "result": {"name": "result", "id": 807, "since": 9, "type": "Number", "cardinality": "One", "final": false, "encrypted": false}
+		},
+		"result": {
+			"name": "result",
+			"id": 807,
+			"since": 9,
+			"type": "Number",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		}
 	},
 	"associations": {},
 	"app": "sys",

@@ -21,8 +21,24 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"response": {"name": "response", "id": 677, "since": 7, "type": "String", "cardinality": "One", "final": false, "encrypted": false},
-		"token": {"name": "token", "id": 676, "since": 7, "type": "String", "cardinality": "One", "final": false, "encrypted": false}
+		"response": {
+			"name": "response",
+			"id": 677,
+			"since": 7,
+			"type": "String",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
+		"token": {
+			"name": "token",
+			"id": 676,
+			"since": 7,
+			"type": "String",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		}
 	},
 	"associations": {},
 	"app": "sys",

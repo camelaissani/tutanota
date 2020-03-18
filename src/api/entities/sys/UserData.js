@@ -21,7 +21,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"date": {"name": "date", "id": 878, "since": 9, "type": "Date", "cardinality": "ZeroOrOne", "final": false, "encrypted": false},
+		"date": {
+			"name": "date",
+			"id": 878,
+			"since": 9,
+			"type": "Date",
+			"cardinality": "ZeroOrOne",
+			"final": false,
+			"encrypted": false
+		},
 		"mobilePhoneNumber": {
 			"name": "mobilePhoneNumber",
 			"id": 403,
@@ -31,7 +39,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"salt": {"name": "salt", "id": 401, "since": 1, "type": "Bytes", "cardinality": "One", "final": false, "encrypted": false},
+		"salt": {
+			"name": "salt",
+			"id": 401,
+			"since": 1,
+			"type": "Bytes",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
 		"userEncClientKey": {
 			"name": "userEncClientKey",
 			"id": 398,
@@ -50,7 +66,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"verifier": {"name": "verifier", "id": 402, "since": 1, "type": "Bytes", "cardinality": "One", "final": false, "encrypted": false}
+		"verifier": {
+			"name": "verifier",
+			"id": 402,
+			"since": 1,
+			"type": "Bytes",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		}
 	},
 	"associations": {
 		"userGroupData": {

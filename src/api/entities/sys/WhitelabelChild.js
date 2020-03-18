@@ -12,8 +12,24 @@ export const _TypeModel: TypeModel = {
 	"versioned": false,
 	"encrypted": true,
 	"values": {
-		"_format": {"name": "_format", "id": 1261, "since": 26, "type": "Number", "cardinality": "One", "final": false, "encrypted": false},
-		"_id": {"name": "_id", "id": 1259, "since": 26, "type": "GeneratedId", "cardinality": "One", "final": true, "encrypted": false},
+		"_format": {
+			"name": "_format",
+			"id": 1261,
+			"since": 26,
+			"type": "Number",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
+		"_id": {
+			"name": "_id",
+			"id": 1259,
+			"since": 26,
+			"type": "GeneratedId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"_ownerEncSessionKey": {
 			"name": "_ownerEncSessionKey",
 			"id": 1263,
@@ -41,7 +57,15 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": false
 		},
-		"comment": {"name": "comment", "id": 1267, "since": 26, "type": "String", "cardinality": "One", "final": false, "encrypted": true},
+		"comment": {
+			"name": "comment",
+			"id": 1267,
+			"since": 26,
+			"type": "String",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": true
+		},
 		"createdDate": {
 			"name": "createdDate",
 			"id": 1265,

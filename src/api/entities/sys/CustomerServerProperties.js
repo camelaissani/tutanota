@@ -12,8 +12,24 @@ export const _TypeModel: TypeModel = {
 	"versioned": false,
 	"encrypted": true,
 	"values": {
-		"_format": {"name": "_format", "id": 958, "since": 13, "type": "Number", "cardinality": "One", "final": false, "encrypted": false},
-		"_id": {"name": "_id", "id": 956, "since": 13, "type": "GeneratedId", "cardinality": "One", "final": true, "encrypted": false},
+		"_format": {
+			"name": "_format",
+			"id": 958,
+			"since": 13,
+			"type": "Number",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
+		"_id": {
+			"name": "_id",
+			"id": 956,
+			"since": 13,
+			"type": "GeneratedId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"_ownerEncSessionKey": {
 			"name": "_ownerEncSessionKey",
 			"id": 987,

@@ -30,7 +30,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"sentDate": {"name": "sentDate", "id": 560, "since": 11, "type": "Date", "cardinality": "One", "final": false, "encrypted": false}
+		"sentDate": {
+			"name": "sentDate",
+			"id": 560,
+			"since": 11,
+			"type": "Date",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		}
 	},
 	"associations": {
 		"notifications": {

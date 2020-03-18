@@ -21,7 +21,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"loginUrl": {"name": "loginUrl", "id": 792, "since": 9, "type": "String", "cardinality": "One", "final": false, "encrypted": false}
+		"loginUrl": {
+			"name": "loginUrl",
+			"id": 792,
+			"since": 9,
+			"type": "String",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		}
 	},
 	"associations": {},
 	"app": "sys",

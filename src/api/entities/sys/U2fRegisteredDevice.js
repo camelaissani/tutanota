@@ -12,8 +12,24 @@ export const _TypeModel: TypeModel = {
 	"versioned": false,
 	"encrypted": false,
 	"values": {
-		"_id": {"name": "_id", "id": 1163, "since": 23, "type": "CustomId", "cardinality": "One", "final": true, "encrypted": false},
-		"appId": {"name": "appId", "id": 1165, "since": 23, "type": "String", "cardinality": "One", "final": true, "encrypted": false},
+		"_id": {
+			"name": "_id",
+			"id": 1163,
+			"since": 23,
+			"type": "CustomId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
+		"appId": {
+			"name": "appId",
+			"id": 1165,
+			"since": 23,
+			"type": "String",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"compromised": {
 			"name": "compromised",
 			"id": 1168,
@@ -23,7 +39,15 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": false
 		},
-		"counter": {"name": "counter", "id": 1167, "since": 23, "type": "Number", "cardinality": "One", "final": true, "encrypted": false},
+		"counter": {
+			"name": "counter",
+			"id": 1167,
+			"since": 23,
+			"type": "Number",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"keyHandle": {
 			"name": "keyHandle",
 			"id": 1164,

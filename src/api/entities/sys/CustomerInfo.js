@@ -12,8 +12,24 @@ export const _TypeModel: TypeModel = {
 	"versioned": false,
 	"encrypted": false,
 	"values": {
-		"_format": {"name": "_format", "id": 152, "since": 1, "type": "Number", "cardinality": "One", "final": false, "encrypted": false},
-		"_id": {"name": "_id", "id": 150, "since": 1, "type": "GeneratedId", "cardinality": "One", "final": true, "encrypted": false},
+		"_format": {
+			"name": "_format",
+			"id": 152,
+			"since": 1,
+			"type": "Number",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
+		"_id": {
+			"name": "_id",
+			"id": 150,
+			"since": 1,
+			"type": "GeneratedId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"_ownerGroup": {
 			"name": "_ownerGroup",
 			"id": 1011,
@@ -77,8 +93,24 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": false
 		},
-		"domain": {"name": "domain", "id": 154, "since": 1, "type": "String", "cardinality": "One", "final": true, "encrypted": false},
-		"erased": {"name": "erased", "id": 1381, "since": 32, "type": "Boolean", "cardinality": "One", "final": true, "encrypted": false},
+		"domain": {
+			"name": "domain",
+			"id": 154,
+			"since": 1,
+			"type": "String",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
+		"erased": {
+			"name": "erased",
+			"id": 1381,
+			"since": 32,
+			"type": "Boolean",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"includedEmailAliases": {
 			"name": "includedEmailAliases",
 			"id": 1067,
@@ -124,7 +156,15 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": false
 		},
-		"source": {"name": "source", "id": 725, "since": 9, "type": "String", "cardinality": "One", "final": false, "encrypted": false},
+		"source": {
+			"name": "source",
+			"id": 725,
+			"since": 9,
+			"type": "String",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
 		"testEndTime": {
 			"name": "testEndTime",
 			"id": 156,

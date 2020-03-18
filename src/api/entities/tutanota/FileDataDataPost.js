@@ -21,8 +21,24 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"group": {"name": "group", "id": 337, "since": 1, "type": "GeneratedId", "cardinality": "One", "final": false, "encrypted": false},
-		"size": {"name": "size", "id": 338, "since": 1, "type": "Number", "cardinality": "One", "final": true, "encrypted": false}
+		"group": {
+			"name": "group",
+			"id": 337,
+			"since": 1,
+			"type": "GeneratedId",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
+		"size": {
+			"name": "size",
+			"id": 338,
+			"since": 1,
+			"type": "Number",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		}
 	},
 	"associations": {},
 	"app": "tutanota",

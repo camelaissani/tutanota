@@ -21,7 +21,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"_id": {"name": "_id", "id": 431, "since": 7, "type": "GeneratedId", "cardinality": "One", "final": true, "encrypted": false},
+		"_id": {
+			"name": "_id",
+			"id": 431,
+			"since": 7,
+			"type": "GeneratedId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"_ownerEncSessionKey": {
 			"name": "_ownerEncSessionKey",
 			"id": 434,
@@ -58,7 +66,15 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": false
 		},
-		"name": {"name": "name", "id": 435, "since": 7, "type": "String", "cardinality": "One", "final": false, "encrypted": true}
+		"name": {
+			"name": "name",
+			"id": 435,
+			"since": 7,
+			"type": "String",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": true
+		}
 	},
 	"associations": {
 		"mails": {

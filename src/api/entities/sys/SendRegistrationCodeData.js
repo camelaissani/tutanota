@@ -39,7 +39,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"language": {"name": "language", "id": 344, "since": 1, "type": "String", "cardinality": "One", "final": false, "encrypted": false},
+		"language": {
+			"name": "language",
+			"id": 344,
+			"since": 1,
+			"type": "String",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
 		"mobilePhoneNumber": {
 			"name": "mobilePhoneNumber",
 			"id": 346,

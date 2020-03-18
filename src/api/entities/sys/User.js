@@ -4,9 +4,32 @@ import {create, TypeRef} from "../../common/EntityFunctions"
 
 export const UserTypeRef: TypeRef<User> = new TypeRef("sys", "User")
 export const _TypeModel: TypeModel = {
-	"name": "User", "since": 1, "type": "ELEMENT_TYPE", "id": 84, "rootId": "A3N5cwBU", "versioned": false, "encrypted": false, "values": {
-		"_format": {"name": "_format", "id": 88, "since": 1, "type": "Number", "cardinality": "One", "final": false, "encrypted": false},
-		"_id": {"name": "_id", "id": 86, "since": 1, "type": "GeneratedId", "cardinality": "One", "final": true, "encrypted": false},
+	"name": "User",
+	"since": 1,
+	"type": "ELEMENT_TYPE",
+	"id": 84,
+	"rootId": "A3N5cwBU",
+	"versioned": false,
+	"encrypted": false,
+	"values": {
+		"_format": {
+			"name": "_format",
+			"id": 88,
+			"since": 1,
+			"type": "Number",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
+		"_id": {
+			"name": "_id",
+			"id": 86,
+			"since": 1,
+			"type": "GeneratedId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"_ownerGroup": {
 			"name": "_ownerGroup",
 			"id": 996,
@@ -34,7 +57,15 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": false
 		},
-		"enabled": {"name": "enabled", "id": 93, "since": 1, "type": "Boolean", "cardinality": "One", "final": true, "encrypted": false},
+		"enabled": {
+			"name": "enabled",
+			"id": 93,
+			"since": 1,
+			"type": "Boolean",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"requirePasswordUpdate": {
 			"name": "requirePasswordUpdate",
 			"id": 1117,
@@ -44,7 +75,15 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": false
 		},
-		"salt": {"name": "salt", "id": 90, "since": 1, "type": "Bytes", "cardinality": "ZeroOrOne", "final": true, "encrypted": false},
+		"salt": {
+			"name": "salt",
+			"id": 90,
+			"since": 1,
+			"type": "Bytes",
+			"cardinality": "ZeroOrOne",
+			"final": true,
+			"encrypted": false
+		},
 		"userEncClientKey": {
 			"name": "userEncClientKey",
 			"id": 89,
@@ -54,8 +93,17 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": false
 		},
-		"verifier": {"name": "verifier", "id": 91, "since": 1, "type": "Bytes", "cardinality": "One", "final": true, "encrypted": false}
-	}, "associations": {
+		"verifier": {
+			"name": "verifier",
+			"id": 91,
+			"since": 1,
+			"type": "Bytes",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		}
+	},
+	"associations": {
 		"alarmInfoList": {
 			"name": "alarmInfoList",
 			"id": 1552,
@@ -168,7 +216,9 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"external": false
 		}
-	}, "app": "sys", "version": "57"
+	},
+	"app": "sys",
+	"version": "57"
 }
 
 export function createUser(values?: $Shape<$Exact<User>>): User {

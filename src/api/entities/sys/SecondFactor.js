@@ -21,7 +21,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"_id": {"name": "_id", "id": 1171, "since": 23, "type": "GeneratedId", "cardinality": "One", "final": true, "encrypted": false},
+		"_id": {
+			"name": "_id",
+			"id": 1171,
+			"since": 23,
+			"type": "GeneratedId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"_ownerGroup": {
 			"name": "_ownerGroup",
 			"id": 1174,
@@ -40,7 +48,15 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": false
 		},
-		"name": {"name": "name", "id": 1176, "since": 23, "type": "String", "cardinality": "One", "final": true, "encrypted": false},
+		"name": {
+			"name": "name",
+			"id": 1176,
+			"since": 23,
+			"type": "String",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"otpSecret": {
 			"name": "otpSecret",
 			"id": 1242,
@@ -50,7 +66,15 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": false
 		},
-		"type": {"name": "type", "id": 1175, "since": 23, "type": "Number", "cardinality": "One", "final": true, "encrypted": false}
+		"type": {
+			"name": "type",
+			"id": 1175,
+			"since": 23,
+			"type": "Number",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		}
 	},
 	"associations": {
 		"u2f": {

@@ -12,8 +12,24 @@ export const _TypeModel: TypeModel = {
 	"versioned": false,
 	"encrypted": false,
 	"values": {
-		"_id": {"name": "_id", "id": 1558, "since": 48, "type": "CustomId", "cardinality": "One", "final": true, "encrypted": false},
-		"endType": {"name": "endType", "id": 1560, "since": 48, "type": "Number", "cardinality": "One", "final": false, "encrypted": true},
+		"_id": {
+			"name": "_id",
+			"id": 1558,
+			"since": 48,
+			"type": "CustomId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
+		"endType": {
+			"name": "endType",
+			"id": 1560,
+			"since": 48,
+			"type": "Number",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": true
+		},
 		"endValue": {
 			"name": "endValue",
 			"id": 1561,
@@ -41,7 +57,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": true
 		},
-		"timeZone": {"name": "timeZone", "id": 1563, "since": 48, "type": "String", "cardinality": "One", "final": false, "encrypted": true}
+		"timeZone": {
+			"name": "timeZone",
+			"id": 1563,
+			"since": 48,
+			"type": "String",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": true
+		}
 	},
 	"associations": {},
 	"app": "sys",

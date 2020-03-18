@@ -21,7 +21,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"allowed": {"name": "allowed", "id": 548, "since": 1, "type": "Boolean", "cardinality": "One", "final": false, "encrypted": false}
+		"allowed": {
+			"name": "allowed",
+			"id": 548,
+			"since": 1,
+			"type": "Boolean",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		}
 	},
 	"associations": {},
 	"app": "sys",

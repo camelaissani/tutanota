@@ -12,8 +12,24 @@ export const _TypeModel: TypeModel = {
 	"versioned": false,
 	"encrypted": false,
 	"values": {
-		"_id": {"name": "_id", "id": 497, "since": 11, "type": "CustomId", "cardinality": "One", "final": true, "encrypted": false},
-		"bodyText": {"name": "bodyText", "id": 499, "since": 11, "type": "String", "cardinality": "One", "final": true, "encrypted": true},
+		"_id": {
+			"name": "_id",
+			"id": 497,
+			"since": 11,
+			"type": "CustomId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
+		"bodyText": {
+			"name": "bodyText",
+			"id": 499,
+			"since": 11,
+			"type": "String",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": true
+		},
 		"confidential": {
 			"name": "confidential",
 			"id": 502,
@@ -41,7 +57,15 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": true
 		},
-		"subject": {"name": "subject", "id": 498, "since": 11, "type": "String", "cardinality": "One", "final": true, "encrypted": true}
+		"subject": {
+			"name": "subject",
+			"id": 498,
+			"since": 11,
+			"type": "String",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": true
+		}
 	},
 	"associations": {
 		"addedAttachments": {

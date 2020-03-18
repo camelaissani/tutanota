@@ -21,7 +21,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"domain": {"name": "domain", "id": 1151, "since": 22, "type": "String", "cardinality": "One", "final": true, "encrypted": false},
+		"domain": {
+			"name": "domain",
+			"id": 1151,
+			"since": 22,
+			"type": "String",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"sessionEncPemCertificateChain": {
 			"name": "sessionEncPemCertificateChain",
 			"id": 1152,

@@ -30,7 +30,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"token": {"name": "token", "id": 680, "since": 7, "type": "String", "cardinality": "One", "final": false, "encrypted": false}
+		"token": {
+			"name": "token",
+			"id": 680,
+			"since": 7,
+			"type": "String",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		}
 	},
 	"associations": {},
 	"app": "sys",

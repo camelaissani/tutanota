@@ -12,7 +12,15 @@ export const _TypeModel: TypeModel = {
 	"versioned": false,
 	"encrypted": false,
 	"values": {
-		"_format": {"name": "_format", "id": 146, "since": 1, "type": "Number", "cardinality": "One", "final": false, "encrypted": false},
+		"_format": {
+			"name": "_format",
+			"id": 146,
+			"since": 1,
+			"type": "Number",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
 		"externalMailEncMailBoxSessionKey": {
 			"name": "externalMailEncMailBoxSessionKey",
 			"id": 673,
@@ -94,7 +102,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"verifier": {"name": "verifier", "id": 149, "since": 1, "type": "Bytes", "cardinality": "One", "final": false, "encrypted": false}
+		"verifier": {
+			"name": "verifier",
+			"id": 149,
+			"since": 1,
+			"type": "Bytes",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		}
 	},
 	"associations": {
 		"userGroupData": {

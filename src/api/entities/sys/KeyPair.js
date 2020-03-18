@@ -12,8 +12,24 @@ export const _TypeModel: TypeModel = {
 	"versioned": false,
 	"encrypted": false,
 	"values": {
-		"_id": {"name": "_id", "id": 1, "since": 1, "type": "CustomId", "cardinality": "One", "final": true, "encrypted": false},
-		"pubKey": {"name": "pubKey", "id": 2, "since": 1, "type": "Bytes", "cardinality": "One", "final": true, "encrypted": false},
+		"_id": {
+			"name": "_id",
+			"id": 1,
+			"since": 1,
+			"type": "CustomId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
+		"pubKey": {
+			"name": "pubKey",
+			"id": 2,
+			"since": 1,
+			"type": "Bytes",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"symEncPrivKey": {
 			"name": "symEncPrivKey",
 			"id": 3,
@@ -23,7 +39,15 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": false
 		},
-		"version": {"name": "version", "id": 4, "since": 1, "type": "Number", "cardinality": "One", "final": true, "encrypted": false}
+		"version": {
+			"name": "version",
+			"id": 4,
+			"since": 1,
+			"type": "Number",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		}
 	},
 	"associations": {},
 	"app": "sys",

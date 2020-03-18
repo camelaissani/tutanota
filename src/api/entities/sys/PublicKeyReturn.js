@@ -21,7 +21,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"pubKey": {"name": "pubKey", "id": 414, "since": 1, "type": "Bytes", "cardinality": "One", "final": false, "encrypted": false},
+		"pubKey": {
+			"name": "pubKey",
+			"id": 414,
+			"since": 1,
+			"type": "Bytes",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
 		"pubKeyVersion": {
 			"name": "pubKeyVersion",
 			"id": 415,

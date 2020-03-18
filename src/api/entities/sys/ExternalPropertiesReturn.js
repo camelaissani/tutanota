@@ -30,7 +30,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"message": {"name": "message", "id": 665, "since": 6, "type": "String", "cardinality": "One", "final": false, "encrypted": false}
+		"message": {
+			"name": "message",
+			"id": 665,
+			"since": 6,
+			"type": "String",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		}
 	},
 	"associations": {
 		"bigLogo": {

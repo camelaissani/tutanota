@@ -12,8 +12,24 @@ export const _TypeModel: TypeModel = {
 	"versioned": false,
 	"encrypted": false,
 	"values": {
-		"_format": {"name": "_format", "id": 241, "since": 1, "type": "Number", "cardinality": "One", "final": false, "encrypted": false},
-		"_id": {"name": "_id", "id": 239, "since": 1, "type": "GeneratedId", "cardinality": "One", "final": true, "encrypted": false},
+		"_format": {
+			"name": "_format",
+			"id": 241,
+			"since": 1,
+			"type": "Number",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
+		"_id": {
+			"name": "_id",
+			"id": 239,
+			"since": 1,
+			"type": "GeneratedId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"_ownerGroup": {
 			"name": "_ownerGroup",
 			"id": 1023,
@@ -32,7 +48,15 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": false
 		},
-		"app": {"name": "app", "id": 242, "since": 1, "type": "String", "cardinality": "One", "final": false, "encrypted": false},
+		"app": {
+			"name": "app",
+			"id": 242,
+			"since": 1,
+			"type": "String",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
 		"operation": {
 			"name": "operation",
 			"id": 246,
@@ -51,8 +75,24 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"timestamp": {"name": "timestamp", "id": 245, "since": 1, "type": "Date", "cardinality": "One", "final": false, "encrypted": false},
-		"type": {"name": "type", "id": 243, "since": 1, "type": "Number", "cardinality": "One", "final": false, "encrypted": false},
+		"timestamp": {
+			"name": "timestamp",
+			"id": 245,
+			"since": 1,
+			"type": "Date",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
+		"type": {
+			"name": "type",
+			"id": 243,
+			"since": 1,
+			"type": "Number",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
 		"versionData": {
 			"name": "versionData",
 			"id": 247,

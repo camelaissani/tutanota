@@ -21,7 +21,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"deviceKey": {"name": "deviceKey", "id": 440, "since": 1, "type": "Bytes", "cardinality": "One", "final": false, "encrypted": false}
+		"deviceKey": {
+			"name": "deviceKey",
+			"id": 440,
+			"since": 1,
+			"type": "Bytes",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		}
 	},
 	"associations": {},
 	"app": "sys",

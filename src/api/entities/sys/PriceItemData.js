@@ -12,8 +12,24 @@ export const _TypeModel: TypeModel = {
 	"versioned": false,
 	"encrypted": false,
 	"values": {
-		"_id": {"name": "_id", "id": 848, "since": 9, "type": "CustomId", "cardinality": "One", "final": true, "encrypted": false},
-		"count": {"name": "count", "id": 850, "since": 9, "type": "Number", "cardinality": "One", "final": false, "encrypted": false},
+		"_id": {
+			"name": "_id",
+			"id": 848,
+			"since": 9,
+			"type": "CustomId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
+		"count": {
+			"name": "count",
+			"id": 850,
+			"since": 9,
+			"type": "Number",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
 		"featureType": {
 			"name": "featureType",
 			"id": 849,
@@ -23,7 +39,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"price": {"name": "price", "id": 851, "since": 9, "type": "Number", "cardinality": "One", "final": false, "encrypted": false},
+		"price": {
+			"name": "price",
+			"id": 851,
+			"since": 9,
+			"type": "Number",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
 		"singleType": {
 			"name": "singleType",
 			"id": 852,

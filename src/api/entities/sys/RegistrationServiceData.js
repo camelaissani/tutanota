@@ -39,7 +39,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"state": {"name": "state", "id": 325, "since": 1, "type": "Number", "cardinality": "One", "final": false, "encrypted": false}
+		"state": {
+			"name": "state",
+			"id": 325,
+			"since": 1,
+			"type": "Number",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		}
 	},
 	"associations": {},
 	"app": "sys",

@@ -12,10 +12,42 @@ export const _TypeModel: TypeModel = {
 	"versioned": false,
 	"encrypted": false,
 	"values": {
-		"_area": {"name": "_area", "id": 715, "since": 9, "type": "Number", "cardinality": "One", "final": true, "encrypted": false},
-		"_format": {"name": "_format", "id": 713, "since": 9, "type": "Number", "cardinality": "One", "final": false, "encrypted": false},
-		"_id": {"name": "_id", "id": 711, "since": 9, "type": "GeneratedId", "cardinality": "One", "final": true, "encrypted": false},
-		"_owner": {"name": "_owner", "id": 714, "since": 9, "type": "GeneratedId", "cardinality": "One", "final": true, "encrypted": false},
+		"_area": {
+			"name": "_area",
+			"id": 715,
+			"since": 9,
+			"type": "Number",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
+		"_format": {
+			"name": "_format",
+			"id": 713,
+			"since": 9,
+			"type": "Number",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
+		"_id": {
+			"name": "_id",
+			"id": 711,
+			"since": 9,
+			"type": "GeneratedId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
+		"_owner": {
+			"name": "_owner",
+			"id": 714,
+			"since": 9,
+			"type": "GeneratedId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"_ownerGroup": {
 			"name": "_ownerGroup",
 			"id": 1004,

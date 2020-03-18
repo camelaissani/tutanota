@@ -12,8 +12,24 @@ export const _TypeModel: TypeModel = {
 	"versioned": false,
 	"encrypted": false,
 	"values": {
-		"_id": {"name": "_id", "id": 950, "since": 13, "type": "CustomId", "cardinality": "One", "final": true, "encrypted": false},
-		"field": {"name": "field", "id": 1705, "since": 54, "type": "Number", "cardinality": "One", "final": false, "encrypted": false},
+		"_id": {
+			"name": "_id",
+			"id": 950,
+			"since": 13,
+			"type": "CustomId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
+		"field": {
+			"name": "field",
+			"id": 1705,
+			"since": 54,
+			"type": "Number",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
 		"hashedValue": {
 			"name": "hashedValue",
 			"id": 951,
@@ -23,8 +39,24 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"type": {"name": "type", "id": 953, "since": 13, "type": "Number", "cardinality": "One", "final": false, "encrypted": false},
-		"value": {"name": "value", "id": 952, "since": 13, "type": "String", "cardinality": "One", "final": false, "encrypted": true}
+		"type": {
+			"name": "type",
+			"id": 953,
+			"since": 13,
+			"type": "Number",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
+		"value": {
+			"name": "value",
+			"id": 952,
+			"since": 13,
+			"type": "String",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": true
+		}
 	},
 	"associations": {},
 	"app": "sys",

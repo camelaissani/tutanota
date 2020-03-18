@@ -12,8 +12,24 @@ export const _TypeModel: TypeModel = {
 	"versioned": false,
 	"encrypted": false,
 	"values": {
-		"_id": {"name": "_id", "id": 1642, "since": 52, "type": "CustomId", "cardinality": "One", "final": true, "encrypted": false},
-		"amount": {"name": "amount", "id": 1643, "since": 52, "type": "Number", "cardinality": "One", "final": true, "encrypted": true},
+		"_id": {
+			"name": "_id",
+			"id": 1642,
+			"since": 52,
+			"type": "CustomId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
+		"amount": {
+			"name": "amount",
+			"id": 1643,
+			"since": 52,
+			"type": "Number",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": true
+		},
 		"endDate": {
 			"name": "endDate",
 			"id": 1648,
@@ -59,7 +75,15 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": true
 		},
-		"type": {"name": "type", "id": 1644, "since": 52, "type": "Number", "cardinality": "One", "final": true, "encrypted": true}
+		"type": {
+			"name": "type",
+			"id": 1644,
+			"since": 52,
+			"type": "Number",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": true
+		}
 	},
 	"associations": {},
 	"app": "sys",

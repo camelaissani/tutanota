@@ -12,7 +12,15 @@ export const _TypeModel: TypeModel = {
 	"versioned": false,
 	"encrypted": false,
 	"values": {
-		"_id": {"name": "_id", "id": 357, "since": 1, "type": "CustomId", "cardinality": "One", "final": true, "encrypted": false},
+		"_id": {
+			"name": "_id",
+			"id": 357,
+			"since": 1,
+			"type": "CustomId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"adminEncGKey": {
 			"name": "adminEncGKey",
 			"id": 363,
@@ -58,7 +66,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"pubKey": {"name": "pubKey", "id": 360, "since": 1, "type": "Bytes", "cardinality": "One", "final": false, "encrypted": false},
+		"pubKey": {
+			"name": "pubKey",
+			"id": 360,
+			"since": 1,
+			"type": "Bytes",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
 		"symEncGKey": {
 			"name": "symEncGKey",
 			"id": 362,

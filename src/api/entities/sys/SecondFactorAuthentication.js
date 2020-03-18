@@ -21,7 +21,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"_id": {"name": "_id", "id": 56, "since": 1, "type": "GeneratedId", "cardinality": "One", "final": true, "encrypted": false},
+		"_id": {
+			"name": "_id",
+			"id": 56,
+			"since": 1,
+			"type": "GeneratedId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"_ownerGroup": {
 			"name": "_ownerGroup",
 			"id": 994,
@@ -40,9 +48,33 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": false
 		},
-		"code": {"name": "code", "id": 59, "since": 1, "type": "String", "cardinality": "One", "final": false, "encrypted": false},
-		"finished": {"name": "finished", "id": 61, "since": 1, "type": "Boolean", "cardinality": "One", "final": false, "encrypted": false},
-		"service": {"name": "service", "id": 62, "since": 1, "type": "String", "cardinality": "One", "final": false, "encrypted": false},
+		"code": {
+			"name": "code",
+			"id": 59,
+			"since": 1,
+			"type": "String",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
+		"finished": {
+			"name": "finished",
+			"id": 61,
+			"since": 1,
+			"type": "Boolean",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
+		"service": {
+			"name": "service",
+			"id": 62,
+			"since": 1,
+			"type": "String",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
 		"verifyCount": {
 			"name": "verifyCount",
 			"id": 60,

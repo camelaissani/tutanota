@@ -21,8 +21,24 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"date": {"name": "date", "id": 879, "since": 9, "type": "Date", "cardinality": "ZeroOrOne", "final": false, "encrypted": false},
-		"restore": {"name": "restore", "id": 406, "since": 1, "type": "Boolean", "cardinality": "One", "final": false, "encrypted": false}
+		"date": {
+			"name": "date",
+			"id": 879,
+			"since": 9,
+			"type": "Date",
+			"cardinality": "ZeroOrOne",
+			"final": false,
+			"encrypted": false
+		},
+		"restore": {
+			"name": "restore",
+			"id": 406,
+			"since": 1,
+			"type": "Boolean",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		}
 	},
 	"associations": {
 		"user": {

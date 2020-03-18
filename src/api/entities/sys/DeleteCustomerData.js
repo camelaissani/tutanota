@@ -30,7 +30,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"reason": {"name": "reason", "id": 644, "since": 5, "type": "String", "cardinality": "One", "final": false, "encrypted": false},
+		"reason": {
+			"name": "reason",
+			"id": 644,
+			"since": 5,
+			"type": "String",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
 		"takeoverMailAddress": {
 			"name": "takeoverMailAddress",
 			"id": 1077,
@@ -40,7 +48,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"undelete": {"name": "undelete", "id": 643, "since": 5, "type": "Boolean", "cardinality": "One", "final": false, "encrypted": false}
+		"undelete": {
+			"name": "undelete",
+			"id": 643,
+			"since": 5,
+			"type": "Boolean",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		}
 	},
 	"associations": {
 		"customer": {

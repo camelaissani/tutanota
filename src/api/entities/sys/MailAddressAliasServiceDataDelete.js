@@ -30,7 +30,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"restore": {"name": "restore", "id": 788, "since": 9, "type": "Boolean", "cardinality": "One", "final": false, "encrypted": false}
+		"restore": {
+			"name": "restore",
+			"id": 788,
+			"since": 9,
+			"type": "Boolean",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		}
 	},
 	"associations": {
 		"group": {

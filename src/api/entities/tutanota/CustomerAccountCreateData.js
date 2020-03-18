@@ -12,7 +12,15 @@ export const _TypeModel: TypeModel = {
 	"versioned": false,
 	"encrypted": false,
 	"values": {
-		"_format": {"name": "_format", "id": 649, "since": 16, "type": "Number", "cardinality": "One", "final": false, "encrypted": false},
+		"_format": {
+			"name": "_format",
+			"id": 649,
+			"since": 16,
+			"type": "Number",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
 		"adminEncAccountingInfoSessionKey": {
 			"name": "adminEncAccountingInfoSessionKey",
 			"id": 659,
@@ -40,9 +48,33 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"code": {"name": "code", "id": 873, "since": 24, "type": "String", "cardinality": "One", "final": false, "encrypted": false},
-		"date": {"name": "date", "id": 651, "since": 16, "type": "Date", "cardinality": "ZeroOrOne", "final": false, "encrypted": false},
-		"lang": {"name": "lang", "id": 652, "since": 16, "type": "String", "cardinality": "One", "final": false, "encrypted": false},
+		"code": {
+			"name": "code",
+			"id": 873,
+			"since": 24,
+			"type": "String",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
+		"date": {
+			"name": "date",
+			"id": 651,
+			"since": 16,
+			"type": "Date",
+			"cardinality": "ZeroOrOne",
+			"final": false,
+			"encrypted": false
+		},
+		"lang": {
+			"name": "lang",
+			"id": 652,
+			"since": 16,
+			"type": "String",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
 		"systemAdminPubEncAccountingInfoSessionKey": {
 			"name": "systemAdminPubEncAccountingInfoSessionKey",
 			"id": 660,

@@ -30,7 +30,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"id": {"name": "id", "id": 491, "since": 1, "type": "GeneratedId", "cardinality": "One", "final": false, "encrypted": false},
+		"id": {
+			"name": "id",
+			"id": 491,
+			"since": 1,
+			"type": "GeneratedId",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
 		"listId": {
 			"name": "listId",
 			"id": 492,
@@ -40,7 +48,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"typeId": {"name": "typeId", "id": 490, "since": 1, "type": "Number", "cardinality": "One", "final": false, "encrypted": false}
+		"typeId": {
+			"name": "typeId",
+			"id": 490,
+			"since": 1,
+			"type": "Number",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		}
 	},
 	"associations": {},
 	"app": "sys",

@@ -12,8 +12,24 @@ export const _TypeModel: TypeModel = {
 	"versioned": false,
 	"encrypted": false,
 	"values": {
-		"_id": {"name": "_id", "id": 1565, "since": 48, "type": "CustomId", "cardinality": "One", "final": true, "encrypted": false},
-		"eventEnd": {"name": "eventEnd", "id": 1569, "since": 48, "type": "Date", "cardinality": "One", "final": true, "encrypted": true},
+		"_id": {
+			"name": "_id",
+			"id": 1565,
+			"since": 48,
+			"type": "CustomId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
+		"eventEnd": {
+			"name": "eventEnd",
+			"id": 1569,
+			"since": 48,
+			"type": "Date",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": true
+		},
 		"eventStart": {
 			"name": "eventStart",
 			"id": 1568,
@@ -32,7 +48,15 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": false
 		},
-		"summary": {"name": "summary", "id": 1567, "since": 48, "type": "String", "cardinality": "One", "final": true, "encrypted": true}
+		"summary": {
+			"name": "summary",
+			"id": 1567,
+			"since": 48,
+			"type": "String",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": true
+		}
 	},
 	"associations": {
 		"alarmInfo": {

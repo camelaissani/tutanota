@@ -12,8 +12,24 @@ export const _TypeModel: TypeModel = {
 	"versioned": false,
 	"encrypted": true,
 	"values": {
-		"_format": {"name": "_format", "id": 1654, "since": 52, "type": "Number", "cardinality": "One", "final": false, "encrypted": false},
-		"_id": {"name": "_id", "id": 1652, "since": 52, "type": "GeneratedId", "cardinality": "One", "final": true, "encrypted": false},
+		"_format": {
+			"name": "_format",
+			"id": 1654,
+			"since": 52,
+			"type": "Number",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
+		"_id": {
+			"name": "_id",
+			"id": 1652,
+			"since": 52,
+			"type": "GeneratedId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"_ownerEncSessionKey": {
 			"name": "_ownerEncSessionKey",
 			"id": 1656,
@@ -41,7 +57,15 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": false
 		},
-		"address": {"name": "address", "id": 1661, "since": 52, "type": "String", "cardinality": "One", "final": false, "encrypted": true},
+		"address": {
+			"name": "address",
+			"id": 1661,
+			"since": 52,
+			"type": "String",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": true
+		},
 		"adminUser": {
 			"name": "adminUser",
 			"id": 1668,
@@ -60,8 +84,24 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": true
 		},
-		"country": {"name": "country", "id": 1660, "since": 52, "type": "String", "cardinality": "One", "final": true, "encrypted": true},
-		"date": {"name": "date", "id": 1658, "since": 52, "type": "Date", "cardinality": "One", "final": true, "encrypted": true},
+		"country": {
+			"name": "country",
+			"id": 1660,
+			"since": 52,
+			"type": "String",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": true
+		},
+		"date": {
+			"name": "date",
+			"id": 1658,
+			"since": 52,
+			"type": "Date",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": true
+		},
 		"grandTotal": {
 			"name": "grandTotal",
 			"id": 1667,
@@ -89,9 +129,33 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": true
 		},
-		"subTotal": {"name": "subTotal", "id": 1666, "since": 52, "type": "Number", "cardinality": "One", "final": true, "encrypted": true},
-		"type": {"name": "type", "id": 1657, "since": 52, "type": "Number", "cardinality": "One", "final": true, "encrypted": true},
-		"vat": {"name": "vat", "id": 1665, "since": 52, "type": "Number", "cardinality": "One", "final": true, "encrypted": true},
+		"subTotal": {
+			"name": "subTotal",
+			"id": 1666,
+			"since": 52,
+			"type": "Number",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": true
+		},
+		"type": {
+			"name": "type",
+			"id": 1657,
+			"since": 52,
+			"type": "Number",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": true
+		},
+		"vat": {
+			"name": "vat",
+			"id": 1665,
+			"since": 52,
+			"type": "Number",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": true
+		},
 		"vatIdNumber": {
 			"name": "vatIdNumber",
 			"id": 1663,
@@ -101,7 +165,15 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": true
 		},
-		"vatRate": {"name": "vatRate", "id": 1664, "since": 52, "type": "Number", "cardinality": "One", "final": true, "encrypted": true}
+		"vatRate": {
+			"name": "vatRate",
+			"id": 1664,
+			"since": 52,
+			"type": "Number",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": true
+		}
 	},
 	"associations": {
 		"items": {

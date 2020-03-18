@@ -21,8 +21,24 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"fileName": {"name": "fileName", "id": 348, "since": 1, "type": "String", "cardinality": "One", "final": true, "encrypted": true},
-		"group": {"name": "group", "id": 350, "since": 1, "type": "GeneratedId", "cardinality": "One", "final": false, "encrypted": false},
+		"fileName": {
+			"name": "fileName",
+			"id": 348,
+			"since": 1,
+			"type": "String",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": true
+		},
+		"group": {
+			"name": "group",
+			"id": 350,
+			"since": 1,
+			"type": "GeneratedId",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
 		"ownerEncSessionKey": {
 			"name": "ownerEncSessionKey",
 			"id": 351,
@@ -32,7 +48,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"mimeType": {"name": "mimeType", "id": 349, "since": 1, "type": "String", "cardinality": "One", "final": true, "encrypted": true}
+		"mimeType": {
+			"name": "mimeType",
+			"id": 349,
+			"since": 1,
+			"type": "String",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": true
+		}
 	},
 	"associations": {
 		"fileData": {

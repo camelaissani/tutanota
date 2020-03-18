@@ -20,7 +20,16 @@ export const _TypeModel: TypeModel = {
 			"cardinality": "One",
 			"final": false,
 			"encrypted": false
-		}, "base64": {"name": "base64", "id": 333, "since": 1, "type": "Boolean", "cardinality": "One", "final": false, "encrypted": false}
+		},
+		"base64": {
+			"name": "base64",
+			"id": 333,
+			"since": 1,
+			"type": "Boolean",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		}
 	},
 	"associations": {
 		"file": {

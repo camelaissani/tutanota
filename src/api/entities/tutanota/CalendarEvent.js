@@ -12,8 +12,24 @@ export const _TypeModel: TypeModel = {
 	"versioned": false,
 	"encrypted": true,
 	"values": {
-		"_format": {"name": "_format", "id": 937, "since": 33, "type": "Number", "cardinality": "One", "final": false, "encrypted": false},
-		"_id": {"name": "_id", "id": 935, "since": 33, "type": "CustomId", "cardinality": "One", "final": true, "encrypted": false},
+		"_format": {
+			"name": "_format",
+			"id": 937,
+			"since": 33,
+			"type": "Number",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
+		"_id": {
+			"name": "_id",
+			"id": 935,
+			"since": 33,
+			"type": "CustomId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"_ownerEncSessionKey": {
 			"name": "_ownerEncSessionKey",
 			"id": 939,
@@ -50,11 +66,51 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": true
 		},
-		"endTime": {"name": "endTime", "id": 943, "since": 33, "type": "Date", "cardinality": "One", "final": false, "encrypted": true},
-		"location": {"name": "location", "id": 944, "since": 33, "type": "String", "cardinality": "One", "final": false, "encrypted": true},
-		"startTime": {"name": "startTime", "id": 942, "since": 33, "type": "Date", "cardinality": "One", "final": false, "encrypted": true},
-		"summary": {"name": "summary", "id": 940, "since": 33, "type": "String", "cardinality": "One", "final": false, "encrypted": true},
-		"uid": {"name": "uid", "id": 988, "since": 35, "type": "String", "cardinality": "ZeroOrOne", "final": false, "encrypted": true}
+		"endTime": {
+			"name": "endTime",
+			"id": 943,
+			"since": 33,
+			"type": "Date",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": true
+		},
+		"location": {
+			"name": "location",
+			"id": 944,
+			"since": 33,
+			"type": "String",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": true
+		},
+		"startTime": {
+			"name": "startTime",
+			"id": 942,
+			"since": 33,
+			"type": "Date",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": true
+		},
+		"summary": {
+			"name": "summary",
+			"id": 940,
+			"since": 33,
+			"type": "String",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": true
+		},
+		"uid": {
+			"name": "uid",
+			"id": 988,
+			"since": 35,
+			"type": "String",
+			"cardinality": "ZeroOrOne",
+			"final": false,
+			"encrypted": true
+		}
 	},
 	"associations": {
 		"repeatRule": {

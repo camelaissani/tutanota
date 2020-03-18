@@ -12,9 +12,33 @@ export const _TypeModel: TypeModel = {
 	"versioned": false,
 	"encrypted": false,
 	"values": {
-		"_id": {"name": "_id", "id": 969, "since": 34, "type": "CustomId", "cardinality": "One", "final": true, "encrypted": false},
-		"color": {"name": "color", "id": 971, "since": 34, "type": "String", "cardinality": "One", "final": false, "encrypted": true},
-		"name": {"name": "name", "id": 1020, "since": 39, "type": "String", "cardinality": "ZeroOrOne", "final": false, "encrypted": true}
+		"_id": {
+			"name": "_id",
+			"id": 969,
+			"since": 34,
+			"type": "CustomId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
+		"color": {
+			"name": "color",
+			"id": 971,
+			"since": 34,
+			"type": "String",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": true
+		},
+		"name": {
+			"name": "name",
+			"id": 1020,
+			"since": 39,
+			"type": "String",
+			"cardinality": "ZeroOrOne",
+			"final": false,
+			"encrypted": true
+		}
 	},
 	"associations": {
 		"group": {

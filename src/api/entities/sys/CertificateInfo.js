@@ -12,7 +12,15 @@ export const _TypeModel: TypeModel = {
 	"versioned": false,
 	"encrypted": false,
 	"values": {
-		"_id": {"name": "_id", "id": 1501, "since": 44, "type": "CustomId", "cardinality": "One", "final": true, "encrypted": false},
+		"_id": {
+			"name": "_id",
+			"id": 1501,
+			"since": 44,
+			"type": "CustomId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"expiryDate": {
 			"name": "expiryDate",
 			"id": 1502,
@@ -22,8 +30,24 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": false
 		},
-		"state": {"name": "state", "id": 1503, "since": 44, "type": "Number", "cardinality": "One", "final": true, "encrypted": false},
-		"type": {"name": "type", "id": 1504, "since": 44, "type": "Number", "cardinality": "One", "final": true, "encrypted": false}
+		"state": {
+			"name": "state",
+			"id": 1503,
+			"since": 44,
+			"type": "Number",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
+		"type": {
+			"name": "type",
+			"id": 1504,
+			"since": 44,
+			"type": "Number",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		}
 	},
 	"associations": {
 		"certificate": {

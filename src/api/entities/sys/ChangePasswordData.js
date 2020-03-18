@@ -21,7 +21,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"code": {"name": "code", "id": 539, "since": 1, "type": "String", "cardinality": "ZeroOrOne", "final": false, "encrypted": false},
+		"code": {
+			"name": "code",
+			"id": 539,
+			"since": 1,
+			"type": "String",
+			"cardinality": "ZeroOrOne",
+			"final": false,
+			"encrypted": false
+		},
 		"oldVerifier": {
 			"name": "oldVerifier",
 			"id": 1240,
@@ -49,8 +57,24 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": false
 		},
-		"salt": {"name": "salt", "id": 537, "since": 1, "type": "Bytes", "cardinality": "One", "final": false, "encrypted": false},
-		"verifier": {"name": "verifier", "id": 536, "since": 1, "type": "Bytes", "cardinality": "One", "final": false, "encrypted": false}
+		"salt": {
+			"name": "salt",
+			"id": 537,
+			"since": 1,
+			"type": "Bytes",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
+		"verifier": {
+			"name": "verifier",
+			"id": 536,
+			"since": 1,
+			"type": "Bytes",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		}
 	},
 	"associations": {},
 	"app": "sys",

@@ -12,8 +12,24 @@ export const _TypeModel: TypeModel = {
 	"versioned": false,
 	"encrypted": true,
 	"values": {
-		"_format": {"name": "_format", "id": 1105, "since": 22, "type": "Number", "cardinality": "One", "final": false, "encrypted": false},
-		"_id": {"name": "_id", "id": 1103, "since": 22, "type": "GeneratedId", "cardinality": "One", "final": true, "encrypted": false},
+		"_format": {
+			"name": "_format",
+			"id": 1105,
+			"since": 22,
+			"type": "Number",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
+		"_id": {
+			"name": "_id",
+			"id": 1103,
+			"since": 22,
+			"type": "GeneratedId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"_ownerEncSessionKey": {
 			"name": "_ownerEncSessionKey",
 			"id": 1107,
@@ -41,7 +57,15 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": false
 		},
-		"action": {"name": "action", "id": 1110, "since": 22, "type": "String", "cardinality": "One", "final": true, "encrypted": true},
+		"action": {
+			"name": "action",
+			"id": 1110,
+			"since": 22,
+			"type": "String",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": true
+		},
 		"actorIpAddress": {
 			"name": "actorIpAddress",
 			"id": 1109,
@@ -60,7 +84,15 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": true
 		},
-		"date": {"name": "date", "id": 1112, "since": 22, "type": "Date", "cardinality": "One", "final": true, "encrypted": true},
+		"date": {
+			"name": "date",
+			"id": 1112,
+			"since": 22,
+			"type": "Date",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": true
+		},
 		"modifiedEntity": {
 			"name": "modifiedEntity",
 			"id": 1111,

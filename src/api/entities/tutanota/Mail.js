@@ -12,10 +12,42 @@ export const _TypeModel: TypeModel = {
 	"versioned": false,
 	"encrypted": true,
 	"values": {
-		"_area": {"name": "_area", "id": 104, "since": 1, "type": "Number", "cardinality": "One", "final": true, "encrypted": false},
-		"_format": {"name": "_format", "id": 101, "since": 1, "type": "Number", "cardinality": "One", "final": false, "encrypted": false},
-		"_id": {"name": "_id", "id": 99, "since": 1, "type": "GeneratedId", "cardinality": "One", "final": true, "encrypted": false},
-		"_owner": {"name": "_owner", "id": 103, "since": 1, "type": "GeneratedId", "cardinality": "One", "final": true, "encrypted": false},
+		"_area": {
+			"name": "_area",
+			"id": 104,
+			"since": 1,
+			"type": "Number",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
+		"_format": {
+			"name": "_format",
+			"id": 101,
+			"since": 1,
+			"type": "Number",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
+		"_id": {
+			"name": "_id",
+			"id": 99,
+			"since": 1,
+			"type": "GeneratedId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
+		"_owner": {
+			"name": "_owner",
+			"id": 103,
+			"since": 1,
+			"type": "GeneratedId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"_ownerEncSessionKey": {
 			"name": "_ownerEncSessionKey",
 			"id": 102,
@@ -97,11 +129,51 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": true
 		},
-		"sentDate": {"name": "sentDate", "id": 106, "since": 1, "type": "Date", "cardinality": "One", "final": true, "encrypted": false},
-		"state": {"name": "state", "id": 108, "since": 1, "type": "Number", "cardinality": "One", "final": true, "encrypted": false},
-		"subject": {"name": "subject", "id": 105, "since": 1, "type": "String", "cardinality": "One", "final": true, "encrypted": true},
-		"trashed": {"name": "trashed", "id": 110, "since": 1, "type": "Boolean", "cardinality": "One", "final": false, "encrypted": false},
-		"unread": {"name": "unread", "id": 109, "since": 1, "type": "Boolean", "cardinality": "One", "final": false, "encrypted": false}
+		"sentDate": {
+			"name": "sentDate",
+			"id": 106,
+			"since": 1,
+			"type": "Date",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
+		"state": {
+			"name": "state",
+			"id": 108,
+			"since": 1,
+			"type": "Number",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
+		"subject": {
+			"name": "subject",
+			"id": 105,
+			"since": 1,
+			"type": "String",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": true
+		},
+		"trashed": {
+			"name": "trashed",
+			"id": 110,
+			"since": 1,
+			"type": "Boolean",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
+		"unread": {
+			"name": "unread",
+			"id": 109,
+			"since": 1,
+			"type": "Boolean",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		}
 	},
 	"associations": {
 		"bccRecipients": {

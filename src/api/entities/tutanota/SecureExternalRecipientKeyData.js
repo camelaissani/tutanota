@@ -12,7 +12,15 @@ export const _TypeModel: TypeModel = {
 	"versioned": false,
 	"encrypted": false,
 	"values": {
-		"_id": {"name": "_id", "id": 533, "since": 11, "type": "CustomId", "cardinality": "One", "final": true, "encrypted": false},
+		"_id": {
+			"name": "_id",
+			"id": 533,
+			"since": 11,
+			"type": "CustomId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"autoTransmitPassword": {
 			"name": "autoTransmitPassword",
 			"id": 537,
@@ -58,7 +66,15 @@ export const _TypeModel: TypeModel = {
 			"final": true,
 			"encrypted": false
 		},
-		"salt": {"name": "salt", "id": 538, "since": 11, "type": "Bytes", "cardinality": "ZeroOrOne", "final": true, "encrypted": false},
+		"salt": {
+			"name": "salt",
+			"id": 538,
+			"since": 11,
+			"type": "Bytes",
+			"cardinality": "ZeroOrOne",
+			"final": true,
+			"encrypted": false
+		},
 		"saltHash": {
 			"name": "saltHash",
 			"id": 539,

@@ -12,8 +12,24 @@ export const _TypeModel: TypeModel = {
 	"versioned": false,
 	"encrypted": false,
 	"values": {
-		"_id": {"name": "_id", "id": 927, "since": 33, "type": "CustomId", "cardinality": "One", "final": true, "encrypted": false},
-		"endType": {"name": "endType", "id": 929, "since": 33, "type": "Number", "cardinality": "One", "final": false, "encrypted": true},
+		"_id": {
+			"name": "_id",
+			"id": 927,
+			"since": 33,
+			"type": "CustomId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
+		"endType": {
+			"name": "endType",
+			"id": 929,
+			"since": 33,
+			"type": "Number",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": true
+		},
 		"endValue": {
 			"name": "endValue",
 			"id": 930,
@@ -32,8 +48,24 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": true
 		},
-		"interval": {"name": "interval", "id": 931, "since": 33, "type": "Number", "cardinality": "One", "final": false, "encrypted": true},
-		"timeZone": {"name": "timeZone", "id": 932, "since": 33, "type": "String", "cardinality": "One", "final": false, "encrypted": true}
+		"interval": {
+			"name": "interval",
+			"id": 931,
+			"since": 33,
+			"type": "Number",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": true
+		},
+		"timeZone": {
+			"name": "timeZone",
+			"id": 932,
+			"since": 33,
+			"type": "String",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": true
+		}
 	},
 	"associations": {},
 	"app": "tutanota",

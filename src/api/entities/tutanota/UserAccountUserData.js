@@ -12,7 +12,15 @@ export const _TypeModel: TypeModel = {
 	"versioned": false,
 	"encrypted": false,
 	"values": {
-		"_id": {"name": "_id", "id": 623, "since": 16, "type": "CustomId", "cardinality": "One", "final": true, "encrypted": false},
+		"_id": {
+			"name": "_id",
+			"id": 623,
+			"since": 16,
+			"type": "CustomId",
+			"cardinality": "One",
+			"final": true,
+			"encrypted": false
+		},
 		"contactEncContactListSessionKey": {
 			"name": "contactEncContactListSessionKey",
 			"id": 637,
@@ -112,7 +120,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"salt": {"name": "salt", "id": 626, "since": 16, "type": "Bytes", "cardinality": "One", "final": false, "encrypted": false},
+		"salt": {
+			"name": "salt",
+			"id": 626,
+			"since": 16,
+			"type": "Bytes",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		},
 		"userEncClientKey": {
 			"name": "userEncClientKey",
 			"id": 628,
@@ -185,7 +201,15 @@ export const _TypeModel: TypeModel = {
 			"final": false,
 			"encrypted": false
 		},
-		"verifier": {"name": "verifier", "id": 627, "since": 16, "type": "Bytes", "cardinality": "One", "final": false, "encrypted": false}
+		"verifier": {
+			"name": "verifier",
+			"id": 627,
+			"since": 16,
+			"type": "Bytes",
+			"cardinality": "One",
+			"final": false,
+			"encrypted": false
+		}
 	},
 	"associations": {},
 	"app": "tutanota",
