@@ -134,7 +134,7 @@ export const propertySequenceParser: Parser<[
 	?[string, Array<[string, string, string]>],
 	string,
 	string
-	]> =
+]> =
 	combineParsers(
 		parsePropertyName,
 		maybeParse(parsePropertyParameters),
@@ -221,7 +221,7 @@ function parseAlarm(alarmObject: ICalObject, event: CalendarEvent): ?AlarmInfo {
 	let trigger: AlarmIntervalEnum
 	// Absolute time
 	if (triggerValue.endsWith("Z")) {
-		const triggerTime = parseTime(triggerValue)
+		const triggerTime = parseTime(triggerValue).date
 		const tillEvent = event.startTime.getTime() - triggerTime.getTime()
 		if (tillEvent >= DAY_IN_MILLIS * 7) {
 			trigger = AlarmInterval.ONE_WEEK
@@ -354,13 +354,20 @@ export function parseCalendarEvents(icalObject: ICalObject): Array<{event: Calen
 		const startProp = getProp(eventObj, "DTSTART")
 		if (typeof startProp.value !== "string") throw new ParserError("DTSTART value is not a string")
 		const tzId = getTzId(startProp)
-		event.startTime = parseTime(startProp.value, tzId)
+		event.startTime = parseTime(startProp.value, tzId).date
 
 		const endProp = eventObj.properties.find(p => p.name === "DTEND")
 		if (endProp) {
 			if (typeof endProp.value !== "string") throw new ParserError("DTEND value is not a string")
 			const endTzId = getTzId(endProp)
-			event.endTime = parseTime(endProp.value, typeof endTzId === "string" ? endTzId : null)
+			const {date, allDay} = parseTime(endProp.value, typeof endTzId === "string" ? endTzId : null)
+			if (allDay) {
+				const endDate = new Date(date)
+				endDate.setUTCDate(date.getUTCDate() + 1)
+				event.endTime = endDate
+			} else {
+				event.endTime = date
+			}
 		} else {
 			const durationProp = eventObj.properties.find(p => p.name === "DURATION")
 			if (durationProp) {
@@ -467,14 +474,15 @@ export function parseUntilRruleTime(value: string, zone: ?string): Date {
 	return toValidJSDate(startOfNextDay, value, components.zone)
 }
 
-export function parseTime(value: string, zone: ?string): Date {
+export function parseTime(value: string, zone: ?string): {date: Date, allDay: boolean} {
 	const components = parseTimeIntoComponents(value)
+	const allDay = !("minute" in components)
 	const filledComponents = Object.assign(
 		{},
-		"minute" in components ? {zone} : {hour: 0, minute: 0, second: 0, millisecond: 0, zone: "UTC"},
+		allDay ? {hour: 0, minute: 0, second: 0, millisecond: 0, zone: "UTC"} : {zone},
 		components
 	)
-	return toValidJSDate(DateTime.fromObject(filledComponents), value, zone)
+	return {date: toValidJSDate(DateTime.fromObject(filledComponents), value, zone), allDay}
 }
 
 function toValidJSDate(dateTime: DateTime, value: string, zone: ?string): Date {

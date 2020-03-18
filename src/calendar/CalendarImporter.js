@@ -246,7 +246,9 @@ export function serializeEvent(event: CalendarEvent, alarms: Array<UserAlarmInfo
 	let dateStart, dateEnd
 	if (isAllDay) {
 		dateStart = `DTSTART:${formatDate(event.startTime, timeZone)}`
-		dateEnd = `DTEND:${formatDate(event.endTime, timeZone)}`
+		let endDate = new Date(event.endTime)
+		endDate.setUTCDate(endDate.getUTCDate() - 1)
+		dateEnd = `DTEND:${formatDate(endDate, timeZone)}`
 	} else if (repeatRule) {
 		dateStart = `DTSTART;TZID=${repeatRule.timeZone}:${formatDateTime(event.startTime, repeatRule.timeZone)}`
 		dateEnd = `DTEND;TZID=${repeatRule.timeZone}:${formatDateTime(event.endTime, repeatRule.timeZone)}`

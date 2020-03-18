@@ -8,6 +8,7 @@ import {createUserAlarmInfo} from "../../../src/api/entities/sys/UserAlarmInfo"
 import {AlarmInterval, EndType, RepeatPeriod} from "../../../src/api/common/TutanotaConstants"
 import {createRepeatRule} from "../../../src/api/entities/sys/RepeatRule"
 import {getAllDayDateUTC} from "../../../src/api/common/utils/CommonCalendarUtils"
+import {getAllDayDateUTCFromZone} from "../../../src/calendar/CalendarUtils"
 
 const zone = "Europe/Berlin"
 const now = new Date(1565704860630)
@@ -51,7 +52,7 @@ o.spec("CalendarImporterTest", function () {
 			).deepEquals([
 				"BEGIN:VEVENT",
 				`DTSTART:20190813`,
-				`DTEND:20190914`,
+				`DTEND:20190913`,
 				`DTSTAMP:20190813T140100Z`,
 				`UID:ownerId${now.getTime()}@tutanota.com`,
 				"SUMMARY:Word \\\\ \\; \\n",
@@ -206,7 +207,7 @@ o.spec("CalendarImporterTest", function () {
 			).deepEquals([
 				"BEGIN:VEVENT",
 				`DTSTART:20190813`,
-				`DTEND:20190815`,
+				`DTEND:20190814`,
 				`DTSTAMP:20190813T140100Z`,
 				`UID:ownerId${now.getTime()}@tutanota.com`,
 				"SUMMARY:Word \\\\ \\; \\n",
@@ -250,9 +251,45 @@ o.spec("CalendarImporterTest", function () {
 				}),
 				alarms: []
 			},
-
 		][0])
 	})
+
+	o("import all-day event", function () {
+		o(parseCalendarStringData([
+				"BEGIN:VCALENDAR",
+				"PRODID:-//Tutao GmbH//Tutanota 3.57.6Yup//EN",
+				"VERSION:2.0",
+				"CALSCALE:GREGORIAN",
+				"METHOD:PUBLISH",
+				"BEGIN:VEVENT",
+				"SUMMARY:Labor Day / May Day",
+				"DTSTART:20200501",
+				"DTEND:20200501",
+				"LOCATION:Brazil",
+				"DESCRIPTION:Some description",
+				"UID:5e528f277e20e1582468903@calendarlabs.com",
+				"DTSTAMP:20200223T144143Z",
+				"STATUS:CONFIRMED",
+				"TRANSP:TRANSPARENT",
+				"SEQUENCE:0",
+				"END:VEVENT",
+				"END:VCALENDAR",
+			].join("\r\n"))[0]
+		).deepEquals([
+			{
+				event: createCalendarEvent({
+					summary: "Labor Day / May Day",
+					startTime: getAllDayDateUTCFromZone(DateTime.fromObject({year: 2020, month: 5, day: 1, zone}).toJSDate(), zone),
+					endTime: getAllDayDateUTCFromZone(DateTime.fromObject({year: 2020, month: 5, day: 2, zone}).toJSDate(), zone),
+					uid: "5e528f277e20e1582468903@calendarlabs.com",
+					description: "Some description",
+					location: "Brazil",
+				}),
+				alarms: []
+			},
+		][0])
+	})
+
 
 	o("parse calendar with alarm in the future", function () {
 		o(parseCalendarStringData([
@@ -345,8 +382,8 @@ o.spec("CalendarImporterTest", function () {
 					_id: ["123", "456"],
 					_ownerGroup: "ownerId",
 					summary: "Word \\ ; \n",
-					startTime: getAllDayDateUTC(DateTime.fromObject({year: 2019, month: 8, day: 13, zone}).toJSDate()),
-					endTime: getAllDayDateUTC(DateTime.fromObject({year: 2019, month: 8, day: 15, zone}).toJSDate()),
+					startTime: getAllDayDateUTC(DateTime.fromObject({year: 2019, month: 8, day: 13}).toJSDate()),
+					endTime: getAllDayDateUTC(DateTime.fromObject({year: 2019, month: 8, day: 15}).toJSDate()),
 					uid: "b64lookingValue==",
 					repeatRule: createRepeatRule({
 						endType: EndType.UntilDate,
