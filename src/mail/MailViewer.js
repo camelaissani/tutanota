@@ -99,6 +99,7 @@ import {createReportPhishingPostData} from "../api/entities/tutanota/ReportPhish
 import {createReportedMailData} from "../api/entities/tutanota/ReportedMailData"
 import {_TypeModel as MailTypeModel} from "../api/entities/tutanota/Mail"
 import {base64ToUint8Array} from "../api/common/utils/Encoding"
+import {MessageBoxN} from "../gui/base/MessageBoxN"
 
 assertMainOrNode()
 
@@ -353,17 +354,6 @@ export class MailViewer {
 						oncreate: (vnode) => this._domMailViewer = vnode.dom
 					}, [
 						m(".header.plr-l.margin-are-inset-lr", [
-							this._suspicious
-								? [
-									m(".warning-stripes", {
-										style: {height: "10px"},
-									}),
-									m(".h2.mt-s.center", "THIS MESSAGE LOOKS SUSPICIOUS"),
-									m(".warning-stripes", {
-										style: {height: "10px"},
-									}),
-								]
-								: null,
 							m(".flex-space-between.button-min-height", [ // the natural height may vary in browsers (Firefox), so set it to button height here to make it similar to the MultiMailViewer
 								m(".flex.flex-column-reverse", [
 									(detailsExpander.panel.expanded)
@@ -397,8 +387,19 @@ export class MailViewer {
 										m("small.date.mt-xs", dateTime)
 									]),
 								]),
-								m(actions)
+								m(actions),
 							]),
+							this._suspicious
+								? m(MessageBoxN, {
+									style: {
+										marginTop: px(size.vpad),
+										maxWidth: "100%",
+									},
+								}, m("", [
+									m("span.b.mlr", "This message looks suspicious."),
+									m("span", "Is is similar to other messages reported for phishing"),
+								]))
+								: null,
 							this._renderAttachments(),
 							m("hr.hr.mt"),
 						]),
